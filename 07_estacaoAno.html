@@ -6,10 +6,45 @@
     */
 
     //ENTRADA
+    const hemisfério = prompt(`Digite em qual hemisfério vc está: `).toUpperCase();
+    const mês = prompt(`Digite em qual mês vc está: `).toUpperCase();
+
+    let resposta;
 
     
     //PROCESSAMENTO
-
+    switch (hemisfério == "NORTE") {
+        case mês == "JANEIRO" || mês == "FEVEREIRO" || mês == "MARÇO":
+            resposta = "Inverno";
+            break;
+        case mês == "ABRIL" || mês == "MAIO" || mês == "JUNHO":
+            resposta = "Primavera";
+            break;
+        case mês == "JULHO" || mês == "AGOSTO" || mês == "SETEMBRO":
+            resposta = "VERÃO";
+            break;
+        case mês == "OUTUBRO" || mês == "NOVEMBRO" || mês == "DEZEMBRO":
+            resposta = "Outono";
+            break;
+    break;
+    }
+    switch (hemisfério == "SUL") {
+        case mês == "JANEIRO" || mês == "FEVEREIRO" || mês == "MARÇO":
+            resposta = "Verão";
+            break;
+        case mês == "ABRIL" || mês == "MAIO" || mês == "JUNHO":
+            resposta = "Outono";
+            break;
+        case mês == "JULHO" || mês == "AGOSTO" || mês == "SETEMBRO":
+            resposta = "Inverno";
+            break;
+        case mês == "OUTUBRO" || mês == "NOVEMBRO" || mês == "DEZEMBRO":
+            resposta = "Primavera";
+            break;
+    break;
+    }
+    
+    alert(`${resposta}`);
 
     //SAÍDA
 

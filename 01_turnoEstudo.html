@@ -12,9 +12,25 @@
     */
 
     //ENTRADA
-    
-    
+ 
+    let turno = prompt("Qual turno vc estuda digite apenas: M-matutino ou V-Vespertino ou N- Noturno").trim().toUpperCase()
+
     //PROCESSAMENTO
+     
+    switch (turno) {
+        case "M":
+            alert("Bom Dia!");
+            break;
+        case "V":
+            alert("Boa Tarde!");
+            break;
+        case "N":
+            alert("Boa Noite!");
+            break;
+        default:
+            alert("valor invalido digite apenas: M-matutino ou V-Vespertino ou N- Noturno");
+            break;
+    }
 
     
     //SAÍDA

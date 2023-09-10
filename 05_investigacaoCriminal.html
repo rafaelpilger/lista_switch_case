@@ -12,10 +12,34 @@
 
     //ENTRADA
 
-    
+    const tele = prompt("Telefonou para a vítima? Digite (S) || sim e (N) || não").trim().toUpperCase();
+    const este = prompt("Esteve no local do crime? Digite (S) ||  sim e (N) || não").trim().toUpperCase();
+    const mor = prompt("Mora perto da vítima? Digite (S) || sim e (N) || não").trim().toUpperCase()
+    const devi= prompt("Devia para a vítima? Digite (S) || sim e (N) || não").trim().toUpperCase();
+    const balho = prompt("Já trablahou com a vítima? Digite (S) || sim e (N) || não").trim().toUpperCase();
+
+  
+    let pon = 0;
+    if (tele == "(S)") pon++;
+    if (este == "(S)") pon++;
+    if (mor == "(S)") pon++;
+    if (devi == "(S)") pon++;
+    if (balho == "(S)") pon++;
     //PROCESSAMENTO
-
-
+    switch (pon != "Tubarão") {
+        case pon == 1:
+            alert(`Tudo certo`);
+            break;
+        case pon == 2:
+            alert(`Suspeito`);
+            break;
+        case pon == 3 || pon == 4:
+            alert(`Cúmplice`);
+            break;
+        case pon == 5:
+            alert(`Assassino`);
+            break;
+    }
     //SAÍDA
 
 </script>
